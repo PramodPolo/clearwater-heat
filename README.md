@@ -16,6 +16,3 @@ For further options, see the definition of the `parameters` block in `clearwater
 adding a line 
 
 
-adding a demo line
-
-testing 1...2...3
