@@ -7,7 +7,7 @@ node {
     
    stage('create stack'){
        
-       sh '. ./creds;heat stack-create clearwater-test -f clearwater.yaml -P "public_mgmt_net_id=b3f50eb3-245a-46c9-b6c4-0dc33778119a;public_sig_net_id=b3f50eb3-245a-46c9-b6c4-0dc33778119a;dnssec_key=QvWDiwiwQVyY6YiCXQnHMgvvGV/wPoQgMrvMmi+0JjEjk8kir6uW8Fl3lwkaQPsCQzzpR9p/qDVGnVKUeCyA1w==;image=0ebaea31-36d6-49fd-ba29-c11ab2824d92;flavor=t2.medium;key_name=testing-kp"'
+       sh '. ./creds;heat stack-create clearwater-test -f clearwater.yaml -P "public_mgmt_net_id=b3f50eb3-245a-46c9-b6c4-0dc33778119a;public_sig_net_id=b3f50eb3-245a-46c9-b6c4-0dc33778119a;dnssec_key=QvWDiwiwQVyY6YiCXQnHMgvvGV/wPoQgMrvMmi+0JjEjk8kir6uW8Fl3lwkaQPsCQzzpR9p/qDVGnVKUeCyA1w==;image=0ebaea31-36d6-49fd-ba29-c11ab2824d92;flavor=clearwater;key_name=testing-kp"'
     }
 
 }
