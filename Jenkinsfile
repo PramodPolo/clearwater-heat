@@ -1,4 +1,7 @@
 node {
+        stage ('git clone'){
+        git 'https://github.com/PramodPolo/clearwater-heat.git'
+    }
     
     stage ('run playbook'){
                
