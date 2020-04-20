@@ -1,0 +1,8 @@
+---
+- name: play1
+  hosts: group1
+  become: yes
+  become_user: root
+  tasks:
+  - name: command
+    shell: . ~/adminrc.sh
