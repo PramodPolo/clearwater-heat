@@ -6,4 +6,4 @@
   tasks:
   - name: command
     shell: . ~/adminrc.sh
-    ignore_unreachable: yes
+    
