@@ -13,8 +13,3 @@ To use them, you must
 
 For further options, see the definition of the `parameters` block in `clearwater.yaml`.
 
-demo
-demo2
-demo34
-
-demo test
