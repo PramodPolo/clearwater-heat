@@ -14,9 +14,4 @@ To use them, you must
 For further options, see the definition of the `parameters` block in `clearwater.yaml`.
 
 
-demo
-demo
-demo1
-test
-
-testing
+editing the file
