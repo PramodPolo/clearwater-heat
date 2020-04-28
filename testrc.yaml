@@ -5,5 +5,5 @@
   become_user: root
   tasks:
   - name: command
-    shell: . ~/adminrc.sh;scp root@jenkins:/var/lib/jenkins/workspace/ansible-pipeline/*.* /root/templates/; heat --debug stack-create clearwater -f /root/templates/clearwater.yaml -P "public_mgmt_net_id=d779595b-4d59-44c1-a310-cae87f247aa7;public_sig_net_id=d779595b-4d59-44c1-a310-cae87f247aa7;dnssec_key=yFyLXRI5mgBRdyLeCE7mxw5r7T7f5UnumdSaUD7MhC23dNn/xfmZy8eAThZl/5vfoAn0tDvy5PqEXblL4YhWTg==;image=dba6451d-ef91-4296-89d9-6ca77bc34ac5;flavor=clearwater-flavor;key_name=clearwater-kp"
+    shell: . ~/adminrc.sh;openstack server list
     
