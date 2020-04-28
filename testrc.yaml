@@ -5,5 +5,5 @@
   become_user: root
   tasks:
   - name: command
-    shell: . ~/adminrc.sh;heat --debug stack-create clearwater-test -f /root/templates/clearwater.yaml -P "public_mgmt_net_id=b3f50eb3-245a-46c9-b6c4-0dc33778119a;public_sig_net_id=b3f50eb3-245a-46c9-b6c4-0dc33778119a;dnssec_key=QvWDiwiwQVyY6YiCXQnHMgvvGV/wPoQgMrvMmi+0JjEjk8kir6uW8Fl3lwkaQPsCQzzpR9p/qDVGnVKUeCyA1w==;image=0ebaea31-36d6-49fd-ba29-c11ab2824d92;flavor=t2.medium;key_name=testing-kp"
+    shell: . ~/adminrc.sh;heat --debug stack-create clearwater -f clearwater.yaml -P "public_mgmt_net_id=d779595b-4d59-44c1-a310-cae87f247aa7;public_sig_net_id=d779595b-4d59-44c1-a310-cae87f247aa7;dnssec_key=yFyLXRI5mgBRdyLeCE7mxw5r7T7f5UnumdSaUD7MhC23dNn/xfmZy8eAThZl/5vfoAn0tDvy5PqEXblL4YhWTg==;image=dba6451d-ef91-4296-89d9-6ca77bc34ac5;flavor=clearwater-flavor;key_name=clearwater-kp"
     
