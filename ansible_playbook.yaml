@@ -1,0 +1,23 @@
+---
+- name: play1
+  hosts: group1
+  become: yes
+  become_user: root
+  tasks:
+  - name: copy
+    copy: src=/root/kesav_ansible/clearwater/{{ item }} dest=/root/clearwater_folder/
+    with_items: 
+     - bono.yaml
+     - clearwater.yaml
+     - dime.yaml
+     - dns.yaml
+     - ellis.yaml
+     - homer.yaml
+     - network.yaml
+     - README.md
+     - security-groups.yaml
+     - sprout.yaml
+     - testrc.yaml
+     - vellum.yaml 
+  - name: command
+    command: python script_python.py
