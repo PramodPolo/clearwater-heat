@@ -5,7 +5,7 @@
   become_user: root
   tasks:
   - name: copy
-    copy: src=/root/kesav_ansible/clearwater/{{ item }} dest=/root/clearwater_folder/
+    copy: src=/var/lib/jenkins/workspace/pipelineansible/{{ item }} dest=/root/clearwater_folder/
     with_items: 
      - bono.yaml
      - clearwater.yaml
