@@ -3,14 +3,10 @@ node {
         git 'https://github.com/PramodPolo/clearwater-heat.git'
     }
     stage ('Approve'){
-            input 'review sonar results and approve'
+            input 'review git and approve'
                
            }
     stage ('run playbook'){
-
-            
-
-               
             sh 'ansible all -m ping --sudo -u root'
             sh 'ansible-playbook -v ansible_playbook.yaml --sudo -u root'
     }
