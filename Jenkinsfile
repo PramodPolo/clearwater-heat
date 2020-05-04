@@ -11,6 +11,8 @@ node {
 
             stage 'Approve'
             input 'review sonar results and approve'
+               
+           }
 
                
             sh 'ansible all -m ping --sudo -u root'
