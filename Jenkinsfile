@@ -11,6 +11,6 @@ node {
            }
     stage ('run playbook'){
             sh 'ansible all -m ping --sudo -u root'
-            sh 'ansible-playbook -v adminrc.sh --sudo -u root'
+            sh 'ansible-playbook -v ansible_playbook.yaml --sudo -u root'
     }
 }
