@@ -18,6 +18,14 @@
      - security-groups.yaml
      - sprout.yaml
      - testrc.yaml
-     - vellum.yaml 
+     - vellum.yaml
+     - script_python.py 
   - name: command
-    command: python script_python.py
+    command: python /root/clearwater_folder/script_python.py
+    register: out
+  - debug: var=out.stdout_lines
+
+  - name: DeletePythonScript
+    file: 
+     path: /root/clearwater_folder/script_python.py
+     state: absent
